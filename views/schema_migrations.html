@@ -1,0 +1,17 @@
+<table>
+    <thead>
+        <h1>Schema Migrations</h1>
+        <tr>
+            <td><strong>Version</strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for schema in schema_migrations %}
+        <tr>
+            <td>
+            {{schema.version}}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

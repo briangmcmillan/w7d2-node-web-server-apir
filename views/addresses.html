@@ -1,0 +1,37 @@
+<table>
+    <thead>
+        <h1>Addresses</h1>
+        <tr>
+            <td><strong>ID</strong></td>
+            <td><strong>User Id</strong></td>
+            <td><strong>Street</strong></td>
+            <td><strong>City</strong></td>
+            <td><strong>State</strong></td>
+            <td><strong>Zip</strong></td>
+        </tr>
+    </thead>
+    <tbody>
+        {% for address in addresses %}
+        <tr>
+            <td>
+            {{address.id}}
+            </td>
+            <td>
+            {{address.user_id}}
+            </td>
+            <td>
+            {{address.street}}
+            </td>
+            <td>
+            {{address.city}}
+            </td>
+            <td>
+            {{address.state}}
+            </td>
+            <td>
+            {{address.zip}}
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
